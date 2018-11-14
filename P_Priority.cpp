@@ -71,14 +71,12 @@ int main()
     	for(int j=0;j<n;j++)
     	 	for(int i=j+1;i<n;i++)
     		{
-    	 		if(ar[i].at<=priority::ct )
+    	 		if(ar[i].at<=priority::ct && ar[i].prt<ar[j].prt)
     	 		{
-    	 			if(ar[i].prt<ar[j].prt)
-    	 			{
-    	 				Myswap(ar[i],ar[j]);
-				 	}
-			 	}
+    	 			Myswap(ar[i],ar[j]);
+				}
 		 	}
+			 
 		 	if(ar[0].bt>0 && ar[0].id!=1)
 		 	{
 		 		priority::ct++;
