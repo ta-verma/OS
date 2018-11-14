@@ -61,8 +61,7 @@ int main()
 		for(int j=i+1;j<n;j++)
 	    	if(ar[j].at<ar[i].at)
 	     		Myswap(ar[j],ar[i]);
-	    else if(ar[j].at==ar[i].at)
-	     	if(ar[j].bt<ar[i].bt)
+	    else if(ar[j].at==ar[i].at && ar[j].bt<ar[i].bt)
 		 		Myswap(ar[j],ar[i]);
     }
     priority::ct=ar[0].at;
